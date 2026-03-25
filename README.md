@@ -1,136 +1,132 @@
-# 🕵️ Detective Quest — Estruturas de Dados em C
+# 🕵️ Detective Quest — Data Structures in C
 
-Projeto desenvolvido em linguagem C com foco no aprendizado prático de **estruturas de dados**, explorando a evolução de um sistema simples até uma aplicação mais completa com múltiplas estruturas integradas.
-
----
-
-## 🎯 Objetivo
-
-Simular um jogo investigativo onde o usuário explora uma mansão em busca de pistas, utilizando diferentes estruturas de dados para:
-
-* Navegação entre ambientes
-* Armazenamento de pistas
-* Organização e busca eficiente de informações
-* Tomada de decisão com base nos dados coletados
+A project developed in C focused on practical learning of **data structures**, showcasing the evolution from a simple system to a more complete application integrating multiple structures.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🎯 Purpose
+
+Simulate an investigative game where the user explores a mansion searching for clues, using different data structures to handle:
+
+* Navigation between rooms
+* Storage of clues
+* Efficient data organization and search
+* Decision-making based on collected evidence
+
+---
+
+## 📁 Project Structure
 
 ```
 📦 algoritmos_avancados
-┣ 📄 detetive1.c   → Navegação em árvore binária
-┣ 📄 detetive2.c   → Árvores + BST (pistas ordenadas)
-┣ 📄 detetive3.c   → Sistema completo (Árvore + BST + Hash + lógica)
-┣ 📄 pratica1.c    → Percursos em árvore (pré, em e pós-ordem)
-┣ 📄 pratica2.c    → Trie + BST + normalização de dados
-┣ 📄 pratica3.c    → Hash com encadeamento (listas ligadas)
-┣ 📄 pratica4.c    → Hash com endereçamento aberto
+┣ 📄 detetive1.c   → Binary tree navigation
+┣ 📄 detetive2.c   → Trees + BST (sorted clues)
+┣ 📄 detetive3.c   → Full system (Tree + BST + Hash + logic)
+┣ 📄 pratica1.c    → Tree traversals (pre, in, post-order)
+┣ 📄 pratica2.c    → Trie + BST + data normalization
+┣ 📄 pratica3.c    → Hash table with chaining
+┣ 📄 pratica4.c    → Hash table with open addressing
 ```
 
 ---
 
-## 🧠 Conceitos Aplicados
+## 🧠 Concepts Applied
 
-### 🌳 Árvores Binárias
+### 🌳 Binary Trees
 
-* Representação da mansão (salas e caminhos)
-* Navegação interativa pelo usuário
+* Representation of the mansion (rooms and paths)
+* Interactive navigation
 
-### 🌲 Árvores de Busca Binária (BST)
+### 🌲 Binary Search Trees (BST)
 
-* Armazenamento ordenado das pistas
-* Exibição automática em ordem alfabética
+* Sorted storage of clues
+* Automatic ordered output
 
-### 🧩 Tabelas Hash
+### 🧩 Hash Tables
 
-* Associação entre pistas e suspeitos
-* Busca eficiente em tempo próximo de O(1)
+* Mapping clues to suspects
+* Fast lookup (near O(1))
 
-### 🔤 Trie (Árvore de Prefixos)
+### 🔤 Trie (Prefix Tree)
 
-* Armazenamento de palavras normalizadas
-* Busca eficiente por termos
+* Storage of normalized words
+* Efficient text lookup
 
 ---
 
-## 🚀 Evolução do Projeto
+## 🚀 Project Evolution
 
 ### 🔹 detetive1.c
 
-* Implementação básica de árvore binária
-* Navegação entre salas
+* Basic binary tree implementation
+* Room navigation
 
 ### 🔹 detetive2.c
 
-* Introdução de pistas
-* Uso de BST para ordenação
+* Introduction of clues
+* Use of BST for sorting
 
 ### 🔹 detetive3.c
 
-* Sistema completo com:
+* Full system featuring:
 
-  * BST (pistas)
-  * Hash (pista → suspeito)
-  * Evita duplicação de pistas
-  * Lógica de julgamento final
+  * BST (clues)
+  * Hash table (clue → suspect)
+  * Duplicate prevention
+  * Final decision logic
 
 ---
 
-## 🕹️ Como Executar
+## 🕹️ How to Run
 
-Compile qualquer arquivo com:
+Compile any file with:
 
 ```bash
-gcc nome_do_arquivo.c -o programa
+gcc filename.c -o program
 ```
 
-Execute com:
+Run with:
 
 ```bash
-./programa
-```
-
-> No Windows:
-
-```bash
-programa.exe
+./program
 ```
 
 ---
 
-## 💡 Exemplo de Uso (detetive3.c)
+## 💡 Example (detetive3.c)
 
-* O usuário navega pela mansão
-* Coleta pistas únicas
-* As pistas são organizadas automaticamente
-* No final, escolhe um suspeito
-* O sistema determina se ele é culpado ou inocente
-
----
-
-## 📌 Destaques Técnicos
-
-* Uso combinado de múltiplas estruturas de dados
-* Separação clara de responsabilidades
-* Controle de duplicidade de dados
-* Implementação de hash com tratamento de colisão
-* Código modular e reutilizável
+* The user navigates through the mansion
+* Collects unique clues
+* Clues are automatically sorted
+* At the end, selects a suspect
+* The system determines if they are guilty or innocent
 
 ---
 
-## 📈 Aprendizados
+## 📌 Technical Highlights
 
-Durante o desenvolvimento, foram praticados:
-
-* Alocação dinâmica de memória (`malloc`, `free`)
-* Manipulação de strings (`string.h`)
-* Recursão
-* Estruturas de dados clássicas
-* Organização de código em C
+* Combination of multiple data structures
+* Clear separation of responsibilities
+* Duplicate data handling
+* Hash collision handling
+* Modular and reusable code
 
 ---
 
-## 👨‍💻 Autor
+## 📈 Learning Outcomes
 
-Márcio Moraes
+During development, the following concepts were practiced:
+
+* Dynamic memory allocation (`malloc`, `free`)
+* String manipulation (`string.h`)
+* Recursion
+* Core data structures
+* Code organization in C
+
+---
+
+## 👨‍💻 Author
+
+Marcio Moraes
+
+---
